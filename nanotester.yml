@@ -1,0 +1,8 @@
+---
+- name: testing nano
+  hosts: linux
+  tasks:
+    - name: make sure nano is here
+      yum: 
+        name: nano
+        state: latest
